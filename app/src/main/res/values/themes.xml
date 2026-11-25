@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!--
+        无标题栏主题（NoActionBar）。
+        V4.3：LG V50 桌面模式（Screen+）下额外关掉系统 ActionBar 与标题装饰，
+        并允许内容延伸进刘海区，配合 MainActivity 的沉浸式全屏使用。
+    -->
+    <style name="Theme.KitchenKDS" parent="android:Theme.Material.NoActionBar">
+        <item name="android:windowBackground">@color/kds_bg</item>
+        <item name="android:statusBarColor">@color/kds_bg</item>
+        <item name="android:navigationBarColor">@color/kds_bg</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionModeOverlay">true</item>
+        <item name="android:windowLayoutInDisplayCutoutMode" tools:targetApi="28">shortEdges</item>
+    </style>
+</resources>

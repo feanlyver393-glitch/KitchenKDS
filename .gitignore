@@ -1,0 +1,22 @@
+# Android / Gradle 构建产物
+*.iml
+.gradle/
+.kotlin/
+/.idea/
+/build/
+/app/build/
+/captures/
+.externalNativeBuild/
+.cxx/
+
+# 本机配置（含 SDK 路径）与签名材料
+local.properties
+*.jks
+*.keystore
+
+# 发布产物走 GitHub Releases，不进版本库
+*.apk
+*.aab
+
+# 运行日志
+*.log

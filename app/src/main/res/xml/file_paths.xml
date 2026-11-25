@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    V5.1 FileProvider 路径白名单。
+    OTA 下载的安装包固定落在 cacheDir/updates/update.apk，
+    因此第一行就是必需的；其余两行留给导出/日志等场景，避免以后再加 provider。
+-->
+<paths>
+    <cache-path name="apk_updates" path="updates/" />
+    <files-path name="kds_files" path="." />
+    <external-files-path name="kds_external" path="." />
+</paths>

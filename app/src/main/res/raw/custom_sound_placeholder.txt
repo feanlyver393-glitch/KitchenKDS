@@ -1,0 +1,20 @@
+内置来单提示音说明（V5）
+====================
+
+本目录下的音频就是「内置提示音」，由 MediaPlayer 直接播放，不再依赖 SoundPool 或运行时合成：
+
+  alert_01.wav   叮咚（双音）        0.64s
+  alert_02.wav   清脆铃（单响）      0.28s
+  alert_03.wav   低频双响            0.56s
+  alert_04.wav   韩式点单（三连音）  0.50s
+  alert_05.wav   长警报             1.20s
+
+格式：16bit PCM 单声道 WAV / 44.1kHz，全部由内置音源生成，无版权风险。
+
+想更换内置音：
+  1. 文件名必须是 小写字母 / 数字 / 下划线，例如 alert_01.mp3；
+  2. 改完后同步修改 AlertSounds.kt 里的 rawName（第 5 行附近）；
+  3. 建议时长 0.2 ~ 1.5 秒、体积 < 200KB。
+
+现场要换音不必重新编译：音效设置页「从手机选择音频文件」导入任意 MP3/WAV/OGG/M4A，
+App 会把它复制到私有目录 filesDir/custom_alert_sound 并立即生效。
